@@ -6,7 +6,7 @@ I am taking a Python online course and need to familiarize myself with these ter
 
 I'm getting a great guide from GEMINI, although most of the time it offers snippets of code that doesn't work, but it gives me a good example of the syntax and built-in functions that can be used. 
 
-I must say that I am using PySimpleGUI with the license type: No-Cost, for personal and non-commercial purposes.
+I must say that I am using tinter library for personal and non-commercial purposes.
 
 About using the listed files:
 
