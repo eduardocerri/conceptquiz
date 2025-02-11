@@ -18,3 +18,9 @@ Am still unable to create a desktop icon for it. It also needs 2 more elements I
 1.- the logic on the very algorithm itself to not repeat the questions while looping on the dictionary.
 2.- Insert some 8-bit music directly in the program. 
 
+
+
+
+
+
+eduardocerrigaviria@gmail.com 
