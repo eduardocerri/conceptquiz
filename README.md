@@ -10,7 +10,9 @@ I must say that I am using tinter library for personal and non-commercial purpos
 
 About using the listed files:
 
-diciconariodepruebas.py is a dictionary with only 3 elements to hold the test, whereas DICTIO_coding_concepts_eduardo is the real deal. 
+beta.py is the main script. 
+
+diccionariodepruebas.py is a dictionary with only 3 elements to hold the test, whereas DICTIO_coding_concepts_eduardo is the real deal. 
 
 It can be used as a visual study tool like flashcards, with a dictionary full of any given data, for any area of ​​university study, since GEMINI LIVE can now apply any SPOKEN questionnaire you want, like an interactive chat, not written like my conceptquiz. 
 
