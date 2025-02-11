@@ -8,5 +8,7 @@ I'm getting a great guide from GEMINI, although most of the time it offers snipp
 
 I must say that I am using PySimpleGUI with the license type: No-Cost, for personal and non-commercial purposes.
 
+About using the listed files:
 
+diciconariodepruebas.py is a dictionary with only 3 elements to hold the test, whereas DICTIO_coding_concepts_eduardo is the real deal.
 
