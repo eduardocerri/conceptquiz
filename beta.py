@@ -43,11 +43,19 @@ The Correct Answer is: {random_key}''')
     entry_answer.delete(0, tk.END)
     
     # Binding result button to result page
-    if correct_answers + wrong_answers == total_concepts:
+    if correct_answers + wrong_answers == total_concepts + 1:
+
+        label_question.pack_forget()
+        entry_answer.pack_forget()
+        button_send.pack_forget()
+        label_previous_answer.pack_forget()
+        label_answer.pack_forget()
+        
+
         # Create a button to show the result page and showing it
         label_end_of_quiz = tk.Label(root)
-        label_end_of_quiz.config(text="End of quiz", font=my_font)
-        label_end_of_quiz.pack(padx=20, pady=3)
+        label_end_of_quiz.config(text="End of quiz", font=("Terminal", 13))
+        label_end_of_quiz.pack(padx=20, pady=40)
         button_result = tk.Button(root, text="Show Results", command=show_result_page, font=my_font)
         button_result.pack(padx=0, pady=5)
 
@@ -68,7 +76,7 @@ def show_result_page():
 
     # Create result page elements
     label_result = tk.Label(root)
-    label_result.config(text=f"Results:\nCorrect Answers: {correct_answers}\nWrong Answers: {wrong_answers}", font=my_font)       
+    label_result.config(text=f"Correct Answers: {correct_answers}\nWrong Answers: {wrong_answers}", font=("Terminal", 12))       
     label_result.pack(padx=20, pady=40)
     
     button_restart = tk.Button(root, text="Restart Quiz", command=restart_quiz, font=my_font)
