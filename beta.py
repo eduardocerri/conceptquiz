@@ -1,9 +1,9 @@
-
 import random
 import tkinter as tk
-from diccionariodepruebas import concepts
+from DICTIO_coding_concepts_eduardo import concepts
 
 # Starting global variables
+
 total_concepts = len(concepts)
 correct_answers = 0
 wrong_answers = 0
@@ -12,8 +12,10 @@ root.title("CQ: Concept Quiz")
 random_key = random.choice(list(concepts.keys()))
 my_font = ("Terminal", 10)
 
+
 # Stabilishing fixed size of window
-root.geometry("850x255")  
+
+root.geometry("850x230")  
 root.resizable(False, False) # avoiding automate resizing 
 
 
@@ -24,6 +26,7 @@ def check_answer(event=None):
 
     # Obtaining user answer
     user_answer = entry_answer.get().lower()    
+
 
     # Verifying answer
     if user_answer == random_key:        
@@ -51,7 +54,6 @@ The Correct Answer is: {random_key}''')
         label_previous_answer.pack_forget()
         label_answer.pack_forget()
         
-
         # Create a button to show the result page and showing it
         label_end_of_quiz = tk.Label(root)
         label_end_of_quiz.config(text="End of quiz", font=("Terminal", 13))
@@ -95,9 +97,10 @@ def main_quiz():
 
     label_question.pack(padx=20, pady=10) 
     entry_answer.pack(expand=False, ipadx=20, ipady=1, padx=0, pady=5)
+    button_send.pack(padx=0, pady=5)
+    label_previous_answer.config(text="") # Resetting previous answer label
     label_previous_answer.pack()
     label_answer.pack()
-    button_send.pack(padx=0, pady=5)
 
     entry_answer.bind("<Return>", check_answer) 
 
@@ -111,6 +114,8 @@ def restart_quiz():
     correct_answers = 0
     wrong_answers = 0
     random_key = random.choice(list(concepts.keys()))
+    label_answer.config(text="")
+    label_previous_answer.config(text="")
 
     # Show main quiz elements again
     label_question.pack(padx=20, pady=10)
@@ -121,7 +126,7 @@ def restart_quiz():
 
     # Update question and previous answer labels
     label_question.config(text=concepts[random_key])
-    label_previous_answer.config(text=f"Previous Answer:")
+
     entry_answer.delete(0, tk.END)  # Clear entry
 
 
@@ -133,10 +138,12 @@ label_previous_answer = tk.Label(root, text=f"Previous Answer: {entry_answer.get
 label_answer = tk.Label(root, font=my_font)
 button_send = tk.Button(root, text="Send", command=check_answer, font=my_font) 
     
+
 # Creating welcome page
 
 label_welcome = tk.Label(root, text="Welcome to CQ!", font=("Terminal", 13))
 button_start = tk.Button(root, text="Start Here", command=main_quiz, font=my_font)
+
 
 # Showing welcome page elements
 
@@ -146,13 +153,11 @@ label_result = tk.Label(root)
 label_welcome.pack(padx=20, pady=40)
 button_start.pack(padx=0, pady=1)
 
+
 # Starting main loop
 
 root.mainloop()
 
-
-
-    
 
 
 
