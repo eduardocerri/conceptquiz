@@ -1,6 +1,6 @@
 import random
 import tkinter as tk
-from DICTIO_coding_concepts_eduardo import concepts
+from diccionariodepruebas import concepts
 
 # Starting global variables
 
