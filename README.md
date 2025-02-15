@@ -16,7 +16,7 @@ diccionariodepruebas.py is a dictionary with only 3 elements to hold the test, w
 
 It can be used as a visual study tool like flashcards, with a dictionary full of any given data, for any area of ​​university study, since GEMINI LIVE can now apply any SPOKEN questionnaire you want, like an interactive chat, not written like my conceptquiz. 
 
-Am still unable to create a desktop icon for it. It also needs 2 more elements I'm working on right now: 
+Am still in the process of creating a new desktop icon for it since I somehow made it once and now I need to redo all the steps for the new version of the code I keep improving. It also needs 2 more elements I'm working on right now: 
 1.- the logic on the very algorithm itself to not repeat the questions while looping on the dictionary.
 2.- Insert some 8-bit music directly in the program. 
 
