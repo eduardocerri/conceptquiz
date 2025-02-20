@@ -5,7 +5,7 @@ concepts = {
     "api": '''Acronym for Application Programming Interface: The software intermediary for 
     two or more computer programs communicating with each other:''',
     "argument": "A number, text string, or other value required for a function to run its code:",
-    "arithmetic operators": "Operators that are used with numbers to perform basic math:",
+    "arithmetic operator": "Operator that is used with numbers to perform basic math:",
     "array": "A data structure consisting of a collection of elements (values or variables):",
     "ascii": "Acronym for American Standard Code for Information Interchange:", 
     "back end": '''The server side of web development that focuses on parts of the website 
@@ -44,9 +44,9 @@ concepts = {
     to do with it:''',
     "dns": "The service that translates URLs to IP addresses:",
     "database": "A collection or set of data used for access, management, and updates:",
-    "data structures": "The format used to organize, manage, and store data:",
-    "dynamic language": '''A programming language that verifies and enforces constraints at
-    runtime instead of beforehand, such as Ruby and Python:''',
+    "data structure": "The format used to organize, manage, and store data:",
+    "dynamic language": '''A type of programming language that verifies and enforces constraints
+    at runtime instead of beforehand, such as Ruby and Python:''',
     "event": "An action that causes something to happen:",
     "exception": "An unplanned event that disrupts the normal flow of the program:",
     "for loop": "A loop with a predetermined beginning, end, and increment (step interval):", 
